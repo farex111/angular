@@ -1,0 +1,27 @@
+<div class="container">
+    <swiper (swiper)="onSwiper($event)" [slidesPerView]="perview">
+        <ng-template swiperSlide class="p-3">
+            <div class="card">
+                <img src="../../assets/img/swiperbg.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Thomas Smith</h5>
+                  <h6>CEO of Rubika</h6>
+                  <img src="../../assets/img/Stars.png" alt="">
+                  <p class="card-text">“They stand out from the competition. Thanks for your hard work.”</p>
+                </div>
+              </div>
+        </ng-template>
+      
+        <ng-template class="p-3" swiperSlide *ngFor="let slide of slides">
+            <div class="card">
+                <img src="../../assets/img/swiperbg.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Thomas Smith</h5>
+                  <h6>CEO of Rubika</h6>
+                  <img src="../../assets/img/Stars.png" alt="">
+                  <p class="card-text">“They stand out from the competition. Thanks for your hard work.”</p>
+                </div>
+              </div>
+        </ng-template>
+      </swiper>
+</div>

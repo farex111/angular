@@ -1,0 +1,106 @@
+@import "~swiper/swiper";
+@import "~swiper/components/pagination/pagination";
+// navigation
+.sub-nav {
+    background-color: #eff5fb;
+    font-family: 'Inter';
+    padding: 20px 0;
+    text-transform: capitalize;
+    .left-section {
+        ul {
+            li {
+                padding-right: 22px;
+                color: #8998c2;
+            }
+        }
+    }
+    .right-section {
+        ul {
+            li:not(:last-child) {
+                padding-right: 22px;
+            }
+        }
+    }
+}
+@media screen and (max-width:469px) {
+    .sub-nav {
+        .container {
+            display: block !important;
+            width: 100%;
+        }
+        .left-section {
+            display: flex;
+            justify-content: center ;
+            padding-bottom: 20px;
+        }
+        .right-section {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+.navbar {
+    font-family: 'Inter';
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 25px 0;
+    .nav-item:not(:last-child) {
+        padding-right: 33px;
+    }
+    a {
+        color: #5e709d !important;
+    }
+    .right-section{
+        ul{
+            li:not(:last-child){
+                padding-right: 30px;
+            }
+            .contact {
+                background-color: #4732d7;
+                color: white !important;
+                font-size: 16px;
+                padding: 16px 60px;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+// footer
+footer {
+    background-color: #121332;
+    color: white;
+    font-family: 'Inter';
+    padding: 100px 0;
+    .col-md-3 {
+        .social {
+            li {
+                padding-right: 20px;
+            }
+        }
+        p {
+            padding-top: 30px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .footer-list {
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            padding-bottom: 30px;
+        }
+        ul:not(:first-child) {
+            padding-left: 30px;
+        }
+        ul {
+            li {
+                padding-bottom: 33px;
+                color: #8998c2;
+                font-size: 16px;
+                i {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}

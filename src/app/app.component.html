@@ -1,0 +1,119 @@
+<nav class="sub-nav">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="left-section">
+            <ul class="d-flex align-items-center">
+                <li>Products</li>
+                <li>Careers</li>
+                <li>Help Desk</li>
+                <li>Login</li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <ul class="d-flex align-items-center">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/Facebook Icon.svg" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/Instagram Icon.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="../assets/img/LinkedIn Icon.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="../assets/img/Twitter Icon.svg" alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active" ><img src="../assets/img/Logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/about']" routerLinkActive="router-link-active" >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/services']" routerLinkActive="router-link-active" >Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+        </ul>
+        <div class="right-section">
+            <ul class="d-flex align-items-center">
+                <li><img src="../assets/img/Search.png" alt=""></li>
+                <li><img src="../assets/img/Cart.png" alt=""></li>
+                <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active"  class="contact">contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+<router-outlet></router-outlet>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <span><img src="../assets/img/Logo1.png" alt="logo"></span>
+                <p>A global brand design agency.
+                    We are pecialists in branding
+                    and customer experience.</p>
+                <ul class="d-flex align-items-center p-0 pt-4 social">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/Facebook Icon.svg" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/Instagram Icon.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><img src="../assets/img/LinkedIn Icon.svg" alt="LinkedIn"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="../assets/img/Twitter Icon.svg" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h1>About Company</h1>
+                <div class="footer-list">
+                    <ul>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Resources</li>
+                        <li>Portfolio</li>
+                    </ul>
+                    <ul>
+                        <li>Pricing</li>
+                        <li>Careers</li>
+                        <li>News</li>
+                        <li>Events</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h1>Get Support</h1>
+                <div class="footer-list">
+                    <ul>
+                        <li>Help Desk</li>
+                        <li>Software</li>
+                        <li>Forum</li>
+                        <li>Sales</li>
+                    </ul>
+                    <ul>
+                        <li>Payments</li>
+                        <li>Developers</li>
+                        <li>Resources</li>
+                        <li>Get App</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h1>Contact Us</h1>
+                <ul class="p-0">
+                    <li><i class="bi bi-clock"></i>Mon-Fri: 9.00am 5pm</li>
+                    <li><i class="bi bi-tag"></i>110 W 34th St, New York</li>
+                    <li><i class="bi bi-telephone"></i>(+1) 212-946-2700</li>
+                    <li><i class="bi bi-envelope"></i>info@SublimeAgency.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" width="7" height="14">
+	<title>Nav Top</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #8998c2 } 
+	</style>
+	<g id="Nav Top">
+		<g id="Right">
+			<g id="Social">
+				<path id="Facebook Icon" class="shp0" d="M4.66 13.99L1.55 13.99L1.55 7.39L-0.01 7.39L-0.01 4.84L1.55 4.84L1.55 3.31C1.55 1.24 2.42 0 4.92 0L6.99 0L6.99 2.55L5.69 2.55C4.72 2.55 4.66 2.9 4.66 3.57L4.66 4.84L7.01 4.84L6.73 7.39L4.66 7.39L4.66 13.99Z" />
+			</g>
+		</g>
+	</g>
+</svg>
