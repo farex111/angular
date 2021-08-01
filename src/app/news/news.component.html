@@ -1,0 +1,102 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Online strategy and consulting services</h1>
+                <ul class="d-flex justify-content-center">
+                    <li><a [routerLink]="['/']" routerLinkActive="router-link-active" >Home <span>/</span></a></li>
+                    <li>Latest News</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="posts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card" *ngFor="let postArray of postArray">
+                    <img [src]="postArray.img" class="card-img-top" alt="posts">
+                    <div class="card-body">
+                      <h5 class="card-title">{{postArray.title}}</h5>
+                      <p class="card-text">Every business needs a way to tell its customers about its products and services. Those marketing channels differ from one business to another and can change as the business grows. The marketing needs an investment.</p>
+                      <a [routerLink]="['/news/details/' + postArray.id]" routerLinkActive="router-link-active"  class="btn">Read More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <form action="">
+                    <input type="search" id="gsearch" name="gsearch" placeholder="Search...">
+                    <button><i class="bi bi-search"></i></button>
+                  </form>
+                <h1 class="title">recent post</h1>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../../assets/img/adult-analysis-brainstorming-coffee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Valuing design leadership for the future of work</h5>
+                                <p class="card-text"><small class="text-muted">Mar 14, 2021</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../../assets/img/adult-analysis-brainstorming-coffee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Valuing design leadership for the future of work</h5>
+                                <p class="card-text"><small class="text-muted">Mar 14, 2021</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../../assets/img/adult-analysis-brainstorming-coffee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Valuing design leadership for the future of work</h5>
+                                <p class="card-text"><small class="text-muted">Mar 14, 2021</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="title">Categories</h1>
+                <ul>
+                    <li>Business <span>10</span></li>
+                    <li>Corporate <span>11</span></li>
+                    <li>Design  <span>43</span></li>
+                    <li>Development <span>11</span></li>
+                    <li>Startup <span>25</span></li>
+                    <li>Technology <span>2</span></li>
+                </ul>
+                <h1 class="title">tags</h1>
+                <div class="tags">
+                    <a href="#" class="btn">Startup</a>
+                    <a href="#" class="btn">design</a>
+                    <a href="#" class="btn">business</a>
+                    <a href="#" class="btn">travel</a>
+                    <a href="#" class="btn">leadership</a>
+                    <a href="#" class="btn">apps</a>
+                </div>
+                <h1 class="title">instagram</h1>
+                <div class="instagram">
+                    <img src="../../assets/img/adult-analysis-brainstorming-coffee.jpg" alt="">
+                    <img src="../../assets/img/adult-analysis-brainstorming-coffee.jpg" alt="">
+                    <img src="../../assets/img/adult-analysis-brainstorming-coffee.jpg" alt="">
+                    <img src="../../assets/img/adult-analysis-brainstorming-coffee.jpg" alt="">
+                    <img src="../../assets/img/adult-analysis-brainstorming-coffee.jpg" alt="">
+                    <img src="../../assets/img/adult-analysis-brainstorming-coffee.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

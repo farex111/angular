@@ -15,6 +15,9 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 // contact
 import { ContactComponent } from './contact/contact.component';
+// news page
+import { NewsComponent } from './news/news.component';
+import { DetailsComponent } from './news/details/details.component';
 
 
 @NgModule({
@@ -25,6 +28,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ServicesComponent,
     ContactComponent,
+    NewsComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
