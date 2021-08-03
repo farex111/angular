@@ -193,12 +193,99 @@ header {
         }
     }
 }
+.seventh-section {
+    background-image: url(../../../assets/img/about-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 50px;
+    .container{
+        .row{
+            .col-md-12{
+                h1 {
+                    color: #26256c;
+                    font-size: 28px;
+                    font-weight: bold;
+                    padding-bottom: 45px;
+                }
+                h5 {
+                    color: #5e709d;
+                    font-size: 18px;
+                    padding-bottom: 45px;
+                }
+                form {
+                    input{
+                        background-color: white;
+                        border: none;
+                        outline: none;
+                        padding: 18px;
+                        border-radius: 20px;
+                        width: 30%;
+                    }
+                    ::placeholder{
+                        font-family: 'Inter';
+                        color: #5e709d;
+                    }
+                    button {
+                        background-color: #4731d7;
+                        color: white;
+                        padding: 15px 35px;
+                        outline: none;
+                        border: none;
+                        border-radius: 20px;
+                        margin-left: 20px;
+                    }
+                }
+                h6 {
+                    color: #aeaeae;
+                    font-size: 15px;
+                    padding: 30px;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:768px) {
     .posts{
         .container{
             .row{
                 .col-md-4{
                     padding-top: 30px;
+                }
+                .col-md-8{
+                    .card{
+                        .card-body{
+                            .links {
+                                display: block !important;
+                                width: 100%;
+                                .tags {
+                                    justify-content: center;
+                                }
+                                .social{
+                                    justify-content: center;
+                                    margin-top: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:975px) {
+    .seventh-section {
+        .container{
+            .row{
+                .col-md-12{
+                    form {
+                        input{
+                            display: block;
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                    }
                 }
             }
         }
